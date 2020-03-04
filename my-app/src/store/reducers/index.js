@@ -16,6 +16,7 @@ export const reducer = (state = initialState, action) => {
 			};
 		case FETCHING_DOG_SUCCESS:
 			return {
+				// spreading the state and if it is a success the initialState is calling the action.payload and passing it to the component
 				...state,
 				isFetching: false,
 				dog: action.payload,

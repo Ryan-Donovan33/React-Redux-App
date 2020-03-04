@@ -15,6 +15,7 @@ export const getDog = () => (dispatch) => {
 		.get('https://dog.ceo/api/breeds/image/random')
 		.then((res) => {
 			console.log('res', res);
+			// accessed the data and now dispatching what is being accessed here to the reducer
 			dispatch({ type: FETCHING_DOG_SUCCESS, payload: res.data.message });
 		})
 		.catch((err) => {
