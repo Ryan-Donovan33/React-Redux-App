@@ -1,14 +1,29 @@
 .App {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	s: center;
+	align-items: center;
+	background-color: #038992fd;
+	color: #c8fafdfd;
+}
+
+div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 95%;
 }
 
 .Dog {
 	display: flex;
 	flex-direction: column;
-	background-color: aquamarine;
 	height: 500px;
 	width: 75%;
+}
+
+button {
+	height: 30px;
+	width: 25%;
+	margin: 2%;
+	padding: 1%;
+	font-size: 14px;
 }

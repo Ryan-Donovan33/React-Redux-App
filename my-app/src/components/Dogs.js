@@ -8,7 +8,7 @@ const Dogs = ({ getDog, dog, isFetching, error }) => {
 	}
 	return (
 		<div>
-			<h2 className="Dog"> Dogs: {dog}</h2>
+			<img width="400" src={dog} alt="Find out what dog!" />
 			<button onClick={getDog}>Find Which Out Dog!</button>
 		</div>
 	);
