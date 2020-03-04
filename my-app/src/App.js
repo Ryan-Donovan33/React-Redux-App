@@ -6,7 +6,7 @@ import './App.css';
 function App() {
 	return (
 		<div className="App">
-			<h1> Dog Picture! </h1>
+			<h1> Random Dog Picture! </h1>
 			<Dogs />
 		</div>
 	);
