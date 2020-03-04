@@ -1,12 +1,13 @@
 import React from 'react';
 
-import Foxes from './components/Foxes';
+import Dogs from './components/Dogs';
 import './App.css';
 
 function App() {
 	return (
 		<div className="App">
-			<Foxes />
+			<h1> Dog Picture! </h1>
+			<Dogs />
 		</div>
 	);
 }

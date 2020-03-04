@@ -1,17 +1,26 @@
-import { FETCHING_FOX_START, FETCHING_FOX_SUCCESS, FETCHING_FOX_FAILURE } from '../actions';
+import { FETCHING_DOG_START, FETCHING_DOG_SUCCESS, FETCHING_DOG_FAILURE } from '../actions';
 
 const initialState = {
-	fox: '',
+	dog: null,
 	isFetching: false,
 	error: ''
 };
 
 export const reducer = (state = initialState, action) => {
 	switch (action.type) {
-		case FETCHING_FOX_START:
-			return {};
-		case FETCHING_FOX_SUCCESS:
-			return {};
+		case FETCHING_DOG_START:
+			return {
+				...state,
+				isFetching: true,
+				error: ''
+			};
+		case FETCHING_DOG_SUCCESS:
+			return {
+				...state,
+				isFetching: false,
+				dog: action.payload,
+				error: ''
+			};
 		default:
 			return state;
 	}
